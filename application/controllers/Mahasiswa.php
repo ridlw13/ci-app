@@ -17,7 +17,7 @@ class Mahasiswa extends CI_Controller {
                   $data['mahasiswa'] = $this->Mahasiswa_model->cariDataMahasiswa();
             }
             $this->load->view('templates/header',$data);
-            $this->load->view('Mahasiswa/index');
+            $this->load->view('Mahasiswa/index', $data);
             $this->load->view('templates/footer');
       }
 
